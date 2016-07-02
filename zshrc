@@ -54,9 +54,6 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
-# export MANPATH="/usr/local/man:$MANPATH"
-
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
 
@@ -74,19 +71,7 @@ export LANG=en_US.UTF-8
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 #
 
-# Go back to Vim by pressing Ctrl-Z
-fancy-ctrl-z () {
-	if [[ $#BUFFER -eq 0 ]]; then
-		BUFFER="fg"
-		zle accept-line
-	else
-		zle push-input
-		zle clear-screen
-	fi
-}
-zle -N fancy-ctrl-z
-bindkey '^Z' fancy-ctrl-z
-
+# Keybindings for numeric keyboard
 bindkey -s "^[Op" "0"
 bindkey -s "^[Ol" "."
 bindkey -s "^[OM" "^M"
@@ -108,19 +93,20 @@ bindkey -s "^[Om" "-"
 bindkey -s "^[Oj" "*"
 bindkey -s "^[Oo" "/""]]]"
 
-alias git=hub
-
-. /opt/boxen/env.sh
-
+# Configure path
+export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 export PATH=/opt/mongodb/bin:/usr/local/mysql/bin:/opt/mongodb/bin:$PATH
-
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="$HOME/.nodenv/bin:$PATH"
 eval "$(nodenv init -)"
-
 export GOPATH=$HOME
 export PATH="$PATH:$GOPATH/bin" # Add RVM to PATH for scripting
 
+# Configure boxen
+. /opt/boxen/env.sh
+alias git=hub
+
+# Configure docker
 export DOCKER_HOST=tcp://192.168.99.100:2376
 export DOCKER_CERT_PATH=/Users/pedrofranceschi/.docker/machine/machines/dinghy
 export DOCKER_TLS_VERIFY=1
