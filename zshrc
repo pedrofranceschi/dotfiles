@@ -50,9 +50,14 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git)
 
+# Load scripts and antigen
 source $ZSH/oh-my-zsh.sh
+source ~/.dot/antigen.zsh
 
 # User configuration
+
+# Plugins
+antigen bundle zsh-users/zsh-syntax-highlighting
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
