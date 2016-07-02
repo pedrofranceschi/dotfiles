@@ -20,7 +20,7 @@ Go to your home directory:
 
     cd ~
 
-Clone my vimfiles repo:
+Clone my dotfiles repo:
 
 
     git clone --recursive https://github.com/pedrofranceschi/dotfiles.git .dot
