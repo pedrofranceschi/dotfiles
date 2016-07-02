@@ -128,5 +128,9 @@ bind v split-window -h -c "#{pane_current_path}"
 bind m split-window -v -c "#{pane_current_path}"
 
 # Plugins
-set -g @plugin 'tmux-plugins/tmux-sessionist'
+set -g @tpm_plugins '          \
+  tmux-plugins/tmux-sessionist \
+'
+#
+# Start tpm
 run '~/.tmux/plugins/tpm/tpm'
