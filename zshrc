@@ -48,7 +48,7 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+# plugins=(git)
 
 # Load scripts and antigen
 source $ZSH/oh-my-zsh.sh
@@ -116,3 +116,7 @@ export DOCKER_HOST=tcp://192.168.99.100:2376
 export DOCKER_CERT_PATH=/Users/pedrofranceschi/.docker/machine/machines/dinghy
 export DOCKER_TLS_VERIFY=1
 export DOCKER_MACHINE_NAME=dinghy
+
+# Fix hub alias
+unalias git
+function git() { hub $@; }
