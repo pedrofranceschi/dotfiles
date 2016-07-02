@@ -88,8 +88,8 @@ tmux_conf_theme_highlight_focused_pane=disabled
 # should new windows retain current path, possible values are:
 #   - true
 #   - false
-tmux_conf_new_windows_retain_current_path=false
-#tmux_conf_new_windows_retain_current_path=true
+#tmux_conf_new_windows_retain_current_path=false
+tmux_conf_new_windows_retain_current_path=true
 
 # should new panes reatin current path, possible values are:
 #   - true
@@ -124,5 +124,9 @@ bind -n C-l if-shell "$is_vim" "send-keys C-l" "select-pane -R"
 bind -n C-\ if-shell "$is_vim" "send-keys C-\\" "select-pane -l"
 
 # Split windows on C-v and C-m
-bind v split-window -h
-bind m split-window -v
+bind v split-window -h -c "#{pane_current_path}"
+bind m split-window -v -c "#{pane_current_path}"
+
+# Plugins
+set -g @plugin 'tmux-plugins/tmux-sessionist'
+run '~/.tmux/plugins/tpm/tpm'
