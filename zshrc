@@ -57,7 +57,13 @@ source ~/.dot/antigen.zsh
 # User configuration
 
 # Plugins
+antigen bundle git
+
 antigen bundle zsh-users/zsh-syntax-highlighting
+
+antigen apply
+# End of plugins
+
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
