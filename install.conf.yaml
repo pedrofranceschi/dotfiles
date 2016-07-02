@@ -1,0 +1,20 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.zsh: zsh
+    ~/.zshrc: zsh/zshrc
+    ~/.tmux: tmux
+    ~/.tmux.conf: tmux/tmux.conf
+    ~/.tmux.conf.local: tmux/tmux.conf.local
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+  -
+    command: cd vim && ./install && cd ..
+    stdin: true
+    stdout: true
+    stderr: true

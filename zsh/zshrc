@@ -1,5 +1,5 @@
 # Load scripts and antigen
-source ~/.dot/antigen.zsh
+source ~/.zsh/antigen.zsh
 
 # Plugins
 antigen use oh-my-zsh
@@ -9,7 +9,7 @@ antigen apply
 # End of plugins
 
 # Use robbyrussel customized theme
-source ~/.dot/themes/robbyrussell.zsh-theme
+source ~/.zsh/robbyrussell.zsh-theme
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
