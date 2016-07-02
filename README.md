@@ -1,7 +1,7 @@
 pedrofranceschi's dotfiles
 ========
 
-These are my dotfiles. I created them almost from scratch when I started using zsh + tmux and adapted them to my needs.
+These are my dotfiles. I created them almost from scratch when I started using zsh + tmux and adapted them to my needs, although [thalesmello's dotfiles](https://github.com/thalesmello/dotfiles) were good source of inspiration.
 
 #### What's included
 
