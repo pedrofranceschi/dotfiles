@@ -14,6 +14,7 @@
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
   - command: git clone git@github.com:tmux-plugins/tpm.git tmux/plugins/tpm || true
+  - [brew install reattach-to-user-namespace, Installing reattach-to-user-namespace]
   - command: cd vim && ./install && cd ..
     stdin: true
     stdout: true

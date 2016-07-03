@@ -13,6 +13,7 @@ These are my dotfiles. I created them almost from scratch when I started using z
 * [.tmux](https://github.com/gpakosz/.tmux)
 * [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)
 * [tmux-sessionist](https://github.com/tmux-plugins/tmux-sessionist)
+* [tmux-MacOSX-pasteboard](https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard)
 
 #### Installing (step by step)
 

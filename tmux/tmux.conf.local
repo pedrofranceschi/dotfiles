@@ -136,3 +136,6 @@ set -g @tpm_plugins '          \
 #
 # Start tpm
 run '~/.tmux/plugins/tpm/tpm'
+
+# Copy to clipboard on y in copy-mode
+bind-key -t vi-copy y copy-pipe "reattach-to-user-namespace pbcopy"
