@@ -75,3 +75,6 @@ export DOCKER_MACHINE_NAME=dinghy
 # Fix hub alias
 unalias git
 function git() { hub $@; }
+
+# Add fzf bindings
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

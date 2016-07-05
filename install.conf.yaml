@@ -15,6 +15,7 @@
   - [git submodule update --init --recursive, Installing submodules]
   - command: git clone git@github.com:tmux-plugins/tpm.git tmux/plugins/tpm || true
   - [brew install reattach-to-user-namespace, Installing reattach-to-user-namespace]
+  - command: git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf || true && ~/.fzf/install --completion --key-bindings --no-update-rc
   - command: cd vim && ./install && cd ..
     stdin: true
     stdout: true

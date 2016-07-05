@@ -14,6 +14,7 @@ These are my dotfiles. I created them almost from scratch when I started using z
 * [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)
 * [tmux-sessionist](https://github.com/tmux-plugins/tmux-sessionist)
 * [tmux-MacOSX-pasteboard](https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard)
+* [fzf](https://github.com/junegunn/fzf)
 
 #### Installing (step by step)
 
