@@ -124,7 +124,7 @@ bind -n C-k if-shell "$is_vim" "send-keys C-k" "select-pane -U"
 bind -n C-l if-shell "$is_vim" "send-keys C-l" "select-pane -R"
 bind -n C-\ if-shell "$is_vim" "send-keys C-\\" "select-pane -l"
 
-# Split windows on C-v and C-m
+# Split windows on C-a v and C-a m
 bind v split-window -h -c "#{pane_current_path}"
 bind m split-window -v -c "#{pane_current_path}"
 
@@ -140,3 +140,7 @@ run '~/.tmux/plugins/tpm/tpm'
 
 # Copy to clipboard on y in copy-mode
 bind-key -t vi-copy y copy-pipe "reattach-to-user-namespace pbcopy"
+
+# Navigate between sessions with C-a C-j and C-a C-k
+bind -r C-j switch-client -n
+bind -r C-k switch-client -p
