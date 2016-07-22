@@ -63,8 +63,8 @@ export PATH="$PATH:$GOPATH/bin" # Add RVM to PATH for scripting
 . /opt/boxen/env.sh
 alias git=hub
 
-# vim = nvim
-which nvim > /dev/null 2>&1 && alias vim=nvim
+# # vim = nvim
+# which nvim > /dev/null 2>&1 && alias vim=nvim
 
 # Configure docker
 export DOCKER_HOST=tcp://192.168.99.100:2376

@@ -3,4 +3,4 @@
 	url = https://github.com/anishathalye/dotbot
 [submodule "vim"]
 	path = vim
-	url = git@github.com:pedrofranceschi/vimfiles.git
+	url = https://github.com/pedrofranceschi/vimfiles
