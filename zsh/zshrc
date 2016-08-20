@@ -50,18 +50,18 @@ bindkey -s "^[Om" "-"
 bindkey -s "^[Oj" "*"
 bindkey -s "^[Oo" "/""]]]"
 
+# Configure boxen
+. /opt/boxen/env.sh
+alias git=hub
+
 # Configure path
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+export PATH="$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 export PATH=/opt/mongodb/bin:/usr/local/mysql/bin:/opt/mongodb/bin:$PATH
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="$HOME/.nodenv/bin:$PATH"
 eval "$(nodenv init -)"
 export GOPATH=$HOME
 export PATH="$PATH:$GOPATH/bin" # Add RVM to PATH for scripting
-
-# Configure boxen
-. /opt/boxen/env.sh
-alias git=hub
 
 # # vim = nvim
 # which nvim > /dev/null 2>&1 && alias vim=nvim
