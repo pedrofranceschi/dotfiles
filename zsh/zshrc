@@ -60,6 +60,8 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="$HOME/Library/Python/2.7/bin:$PATH"
 export GOPATH=$HOME
 export PATH="$PATH:$GOPATH/bin" # Add RVM to PATH for scripting
+export PATH="/opt/homebrew/opt/python@3.11/libexec/bin:$PATH"
+export PATH="$PATH:$HOME/.docker/bin"
 
 # vim = nvim
 # which nvim > /dev/null 2>&1 && alias vim=nvim
