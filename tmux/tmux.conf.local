@@ -289,8 +289,10 @@ bind -T copy-mode-vi C-j select-pane -D
 bind -T copy-mode-vi C-k select-pane -U
 bind -T copy-mode-vi C-l select-pane -R
 
-# Copy to clipboard without exiting copy mode (no scroll reset)
-bind -T copy-mode-vi y send-keys -X copy-pipe "pbcopy"
+# Copy to clipboard without exiting copy mode (no scroll reset).
+# Perl joins soft-wrapped lines: tmux pads them with trailing spaces,
+# so " +\n" = visual wrap (join), bare "\n" = hard newline (keep).
+bind -T copy-mode-vi y send-keys -X copy-pipe "perl -0pe 's/ +\n(?!\n)/ /g' | pbcopy"
 # bind -n C-\ if-shell "$is_vim" "send-keys C-\\" "select-pane -l"
 
 # Hook to send brighten signal when entering a vim pane
